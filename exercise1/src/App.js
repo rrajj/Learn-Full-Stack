@@ -9,8 +9,11 @@ const Header = (props) => {
   )
 }
 
-const Content = (props) => {
-  return (
+
+// const Content = (props) => {
+// to send the whole object
+const Content = ({props}) => {
+return (
     // Exercise 1.1
     // <div>
     //   <p>{props.part} {props.exercise}</p>
@@ -18,9 +21,9 @@ const Content = (props) => {
 
     // Exercise 1.2
     <div>
-      <p>{props.data[0].part} {props.data[0].ex}</p>
-      <p>{props.data[1].part} {props.data[1].ex}</p>
-      <p>{props.data[2].part} {props.data[2].ex}</p>
+      <p>{props[0].part} {props[0].ex}</p>
+      <p>{props[1].part} {props[1].ex}</p>
+      <p>{props[2].part} {props[2].ex}</p>
     </div>
   )
 }
@@ -54,7 +57,7 @@ const App = () => {
       {/* <Content part={part1} exercise={exercises1}/>
       <Content part={part2} exercise={exercises2}/>
       <Content part={part3} exercise={exercises3}/> */}
-      <Content data={data}/>
+      <Content props={data}/>
       <Total ex1={exercises1} ex2={exercises2} ex3={exercises3}/>
     </>
   )
