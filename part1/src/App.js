@@ -65,7 +65,7 @@ const Props2 = (props) => {
 const Footer = () => {
   return (
     <div>
-      greeting app created by <a href='https://github.com/mluukkai'>mluukkai</a>
+      Whole repo on <a href='https://github.com/rrajj'>rrajj</a>
     </div>
   )
 }
